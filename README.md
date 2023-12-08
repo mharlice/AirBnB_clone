@@ -1,5 +1,19 @@
-# AirBnB_clone
-Implementation of AirBnB website
+# AirBnB Clone
+
+## Project Description
+
+The AirBnB Clone project is a web application that mimics the basic functionality of the AirBnB website. It gives users information about the AirBnB.
+
+## Console
+
+The console is a text-based interface that enables developers to interact with the AirBnB Clone functionality. It supports various commands for managing objects such as creating, updating, and deleting instances of classes like User, Place, and Review.
+
+## How to Start the Console
+
+To start the AirBnB Clone command interpreter, you need to:
+1. Clone the repository to your local machine:
+2. cd into the AirBnB_clone directory.
+3. Run ./console.py
 
 ## Usage: 
 ### In interactive mode:
