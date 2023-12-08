@@ -5,7 +5,8 @@
 The AirBnB Clone project is a web application that mimics the basic functionality of the AirBnB website. It gives customers information about the AirBnB.
 
 ## Console
-The console is a text-based interface that enables developers to interact with the AirBnB Clone functionality. It supports various commands for managing objects such as creating, updating, and deleting instances of classes like User, Place, and Review.
+
+The console is a text-based interface that enables us to interact with the AirBnB Clone functionality. It supports various commands for managing objects such as creating, updating, and deleting instances of classes like User, Place, and Review.
 
 ## How to Start the Console
 
