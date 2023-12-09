@@ -5,6 +5,7 @@ import os
 from models.base_model import BaseModel
 from models.user import User
 
+
 class FileStorage:
     """A class to create storage files from"""
     __file_path = "file.json"

@@ -13,7 +13,8 @@ class HBNBCommand(cmd.Cmd):
     # prompt
     prompt = "(hbnb) " if sys.stdin.isatty() else ""
 
-    classes = ['BaseModel', 'User', 'State', 'City', 'Amenity', 'Place', 'Review']
+    classes = ['BaseModel', 'User', 'State', 'City',
+               'Amenity', 'Place', 'Review']
 
     def do_quit(self, line):
         return True
