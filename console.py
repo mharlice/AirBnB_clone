@@ -34,7 +34,6 @@ class HBNBCommand(cmd.Cmd):
 
     def do_EOF(self, line):
         """Exits console"""
-        print()
         return True
 
     def help_EOF(self):
@@ -177,3 +176,7 @@ class HBNBCommand(cmd.Cmd):
                 if value.__class__.__name == line:
                     count += 1
             print(count)
+
+
+if __name__ == '__main__':
+    HBNBCommand().cmdloop()
