@@ -6,6 +6,11 @@ import sys
 import models
 from models.base_model import BaseModel
 from models.user import User
+from models.city import City
+from models.place import Place
+from models.amenity import Amenity
+from models.review import Review
+from models.state import State
 
 
 class HBNBCommand(cmd.Cmd):
@@ -151,6 +156,20 @@ class HBNBCommand(cmd.Cmd):
                     models.storage.all()[i].save()
                     return
             print("** no instance found **")
+
+    def do_count(self, line):
+        """
+        Retrieves the number of instances of a class
+        """
+        args = line.split()  # to get rid of extra spaces
+        if args[0] not in self.classes:
+            print("** class doesn't exist **")
+        else:
+            count = 0
+            for value in models.storage.all():
+                if value.__class__.__name == line:
+                    count += 1
+            print(count)
 
 
 if __name__ == "__main__":

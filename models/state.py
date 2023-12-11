@@ -9,7 +9,3 @@ import models
 class State(BaseModel):
     """A class to create State objects from"""
     name = ""
-
-    def __init__(self, *args, **kwargs):
-        """Initializes the object"""
-        super().__init__(args, kwargs)
