@@ -25,14 +25,15 @@ class HBNBCommand(cmd.Cmd):
         """Do nothing upon receiving an empty line."""
         pass
 
-    def do_quit(self, line):
+    def do_quit(self):
+        """Quit command to exit the program"""
         return True
 
     def help_quit(self):
         print("Quit command to exit the program\n")
 
     def do_EOF(self, line):
-        print("")
+        """Exits console"""
         return True
 
     def help_EOF(self):
