@@ -21,6 +21,10 @@ class HBNBCommand(cmd.Cmd):
     classes = ['BaseModel', 'User', 'State', 'City',
                'Amenity', 'Place', 'Review']
 
+    def emptyline(self):
+        """Do nothing upon receiving an empty line."""
+        pass
+
     def do_quit(self, line):
         return True
 
@@ -28,6 +32,7 @@ class HBNBCommand(cmd.Cmd):
         print("Quit command to exit the program\n")
 
     def do_EOF(self, line):
+        print("")
         return True
 
     def help_EOF(self):
