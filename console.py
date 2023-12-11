@@ -23,7 +23,7 @@ class HBNBCommand(cmd.Cmd):
 
     def emptyline(self):
         """Do nothing upon receiving an empty line."""
-        return Falseg
+        return False
 
     def do_quit(self, line):
         """Quit command to exit the program"""
