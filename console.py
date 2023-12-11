@@ -25,7 +25,7 @@ class HBNBCommand(cmd.Cmd):
         """Do nothing upon receiving an empty line."""
         pass
 
-    def do_quit(self):
+    def do_quit(self, line):
         """Quit command to exit the program"""
         return True
 
@@ -34,6 +34,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_EOF(self, line):
         """Exits console"""
+        print()
         return True
 
     def help_EOF(self):
@@ -122,7 +123,7 @@ class HBNBCommand(cmd.Cmd):
         based or not on the class name
         """
         args = line.split()  # to get rid of extra spaces
-        if args[0] not in self.classes:
+        if args not in self.classes:
             print("** class doesn't exist **")
         else:
             list_a = []
@@ -176,7 +177,3 @@ class HBNBCommand(cmd.Cmd):
                 if value.__class__.__name == line:
                     count += 1
             print(count)
-
-
-if __name__ == "__main__":
-    HBNBCommand().cmdloop()
