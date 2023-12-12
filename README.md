@@ -1,5 +1,4 @@
 # AirBnB Clone
-
 ## Project Description
 
 The AirBnB Clone project is a web application that mimics the basic functionality of the AirBnB website. It gives customers information about the AirBnB.
