@@ -11,7 +11,7 @@ The console is a text-based interface that enables developers to interact with t
 ## How to Start the Console
 To start the AirBnB Clone command interpreter, you need to:
 * Clone the repository to your local machine:
-2. cd into the AirBnB_clone directory.
+* cd into the AirBnB_clone directory.
 3. Run ./console.py
 
 ## Usage:
