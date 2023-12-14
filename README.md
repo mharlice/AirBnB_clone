@@ -33,7 +33,7 @@ f9bc61d8-e103-42f6-a646-4c573229134d
 MBP:AirBnB_clone User1$
  
 ```
-### In non-interactive mode: 
+## In non-interactive mode: 
 ```
 MBP:AirBnB_clone User1$ echo "help" | ./console.py
 
